@@ -1,0 +1,15 @@
+/* Styling for the scroll-to-top button */
+#btnScrollToTop {
+    position: fixed; /* Fixed position so it stays in the viewport */
+    right: 10px; /* Positioned 10px from the right edge of the viewport */
+    bottom: 10px; /* Positioned 10px from the bottom edge of the viewport */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    border-radius: 50%; /* Border radius to make it circular */
+    background: #fff; /* Background color of the button */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /* Box shadow for a subtle effect */
+    color: #000; /* Text color */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    cursor: pointer; /* Cursor style */
+}

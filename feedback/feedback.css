@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative; /* Set position to relative to contain the pseudo-element */
+    width: 100%;
+    min-height: 500px;
+    background-image: url("solar-8244680_640.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Create a pseudo-element with the blur effect */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Inherit background image from body */
+    background-attachment: inherit; /* Inherit background attachment from body */
+    background-position: inherit; /* Inherit background position from body */
+    background-repeat: inherit; /* Inherit background repeat from body */
+    background-size: inherit; /* Inherit background size from body */
+    filter: blur(10px); /* Add blur effect */
+    z-index: -1;
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140vh;
+    width: 100%;
+}
+
+.topic{
+    padding-top: 150px;
+    color: rgb(255, 255, 255);
+}
+
+.topic h1{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.topic p{
+    text-align: center;
+    margin-right: 70px;
+    font-size: 20px;
+}
+
+.input label{
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Input boxes */
+.content form{
+    border-radius: 10px;
+    padding: 40px;
+    width: 700px;
+    text-align: center;
+    box-shadow: 0 0 20px #ffffff;
+    margin-bottom: 100px;
+}
+
+form .input_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input .item{
+    width: 80%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #86C232;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin-bottom: 20px;
+}
+
+.input .item::placeholder{
+    color: #ffffff;
+}
+
+.textarea .item{
+    min-width: 600px;
+    resize: none;
+}
+
+.content h2{
+    color: #fff;
+}
+
+/* Radio buttons */
+.buttons1, .buttons2{
+    margin: 30px 0;
+}
+
+.buttons1 label, .buttons2 label{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+
+.radio1, .radio2{
+    display: flex;
+    justify-content: center;
+}
+
+.radio1 label, .radio2 label{
+    color: #86C232;
+    display: block;
+    cursor: pointer;
+    margin: 20px 20px;
+}
+
+/* Dropdown */
+.drop label{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+
+.drop select{
+    margin: 20px 0 30px;
+    background-color: transparent;
+    border: 2px solid #86C232;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.drop option{
+    color: #fff;
+    background-color: #676a6d;
+    font-size: 15px;
+}
+
+/* Error msg */
+.input .error_text{
+    font-size: 14px;
+    color: #d93025;
+    text-align: left;
+    margin: -15px 0 10px 10px;
+    display: none;
+}
+
+.textarea .error_text{
+    margin: -15px 0 10px 35px;
+}
+
+.input.error .error_text{   /* Error msg display */
+    display: block;
+}
+
+.input.error .item{     /* Error box */
+    border: 2px solid #d93025;
+}
+
+/* Stars */
+.content .stars{
+    margin: 20px 0 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.stars i{
+    color: #e6e6e6;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: color 0.2s ease;
+}
+
+.stars i.active{
+    color: #ff9c1a;
+}
+
+/* Submit Button*/
+form button{
+    padding: 12px 32px;
+    background-color: #88c241;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #86C232;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+form button:hover{
+    background-color: #568b14;
+    transform: scale(1.05);
+}
+
+/* For small screens */
+@media only screen and (max-width: 600px) {
+    .content{
+        flex-direction: column;
+    }
+    .topic{
+        padding-top: 100px; /* Adjust as needed */
+    }
+    .topic h1{
+        font-size: 40px;
+    }
+    .topic p{
+        margin-right: 0;
+    }
+    form {
+        width: 90%; /* Adjust as needed */
+        margin: 0 auto;
+    }
+    .stars{
+        margin: 10px 0 20px 0;
+    }
+}
+
+/* For medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .topic h1{
+        font-size: 50px;
+    }
+    form {
+        width: 80%; /* Adjust as needed */
+    }
+}
+
+/* For large screens */
+@media only screen and (min-width: 1025px) {
+    .topic h1{
+        font-size: 60px;
+    }
+    form {
+        width: 700px; /* Reset width */
+    }
+}
+
+
+
+.containerr {
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.madeby h4 {
+    display: block; /* or display: inline-block; */
+    align-items: center;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.madeby p {
+    padding: 10px;
+    color: white;
+    font-size:small;
+    text-align: center;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+

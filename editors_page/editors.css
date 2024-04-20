@@ -1,0 +1,46 @@
+/* Styles for the body */
+body {
+    text-align: center; /* Center-align text */
+    background-color: rgb(252, 183, 205); /* Set background color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styles for heading level 1 */
+h1 {
+    font-size: xx-large; /* Set font size for heading */
+}
+
+/* Styles for paragraphs */
+p {
+    font-size: larger; /* Set font size for paragraphs */
+    font-weight: 600; /* Set font weight for paragraphs */
+}
+
+/* Styles for anchor links */
+a {
+    font-size: larger; /* Set font size for anchor links */
+    font-weight: bold; /* Set font weight for anchor links */
+    color: black; /* Set text color for anchor links */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Specify font family for anchor links */
+}
+
+/* Styles for heading level 2 */
+h2 {
+    padding-block: 15px; /* Set padding for top and bottom */
+    background-color: white; /* Set background color for heading */
+    width: 100%; /* Set width to 100% */
+    font-style: italic; /* Set font style to italic */
+    font-size: larger; /* Set font size for heading */
+    font-size: x-large; /* Set font size for heading */
+}
+
+/* Styles for heading level 3 */
+h3 {
+    font-size: x-large; /* Set font size for heading */
+}
+
+/* Styles for main content area */
+.main {
+    padding: 15px 0; /* Set padding for top and bottom */
+    background-color: #fff; /* Set background color for main content area */
+}
