@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+header{
+    box-sizing: border-box; 
+}
+
+header{
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 10px;
+    z-index: 1000000;
+}
+
+header.scroll {
+    font-family: "Poppins", sans-serif;
+    padding: 5px 20px;
+    background: #ffffff;
+}
+
+header.scroll .logo,
+header.scroll ul li a {
+    color: #000;
+}
+
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul{
+    font-family: "Poppins", sans-serif;
+    position: relative ;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+header ul li {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    margin: 0 30px;
+    text-decoration:none ;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 1000px;
+    transition: 0.6s;
+    font-size: large;
+}
+
+.navbar a::before{
+    font-family: "Poppins", sans-serif;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.cursor header{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.1s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 99999999;
+}

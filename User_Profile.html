@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Synerger</title>
+        <!--Importing CSS for the page-->
+        <link rel="stylesheet" href="User_Profile.css">
+        <link rel="stylesheet" href="footer.css">
+        <!--Navigation Bar CSS and JS-->
+        <link rel="stylesheet" href="navbar.css">
+        <script src="navbar.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <header>
+            <a href="" class="logo">Synerger</a>
+            <nav class="navbar">
+                <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="sitemap.html">SiteMap</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="User_Profile.html">User Profile</a></li>            
+                </ul>
+            </nav>
+        </header>
+        <h1> User Profile </h1>
+        <div class="ProgressStatus">
+            Profile Completed: <span id="progressText" class="progress-text">0%</span>
+        </div>
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+        <div class="welcome">
+            <p> Click Below Button to Create a User Profile</p>
+        </div>
+        <!-- Button for Start adding details (Personal Infotmation)-->
+        <button onclick="showprompt()" class="StartButton"> Start</button>
+        <!-- Step 2 Prompt Boxes-->
+        <div class="Step1">
+            <div class="cover1">
+                <div class="top">
+                    <h4 class="prompt"> Step 1 : Personal Details | Question 1/5 <br> <br> Enter your Name : </h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Enter a name" class="input1">
+                </div>
+                <div class="button">
+                    <button onclick="ok(1)" class="ok"> Next</button>
+                    <button onclick="skip(1)" class="skip"> Skip </button>
+                </div>
+            </div>
+        
+            <div class="cover2">
+                <div class="top">
+                    <h4 class="prompt"> Step 1 : Personal Details | Question 2/5 <br> <br> Enter Your Surname :</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Enter a Surname" class="input2">
+                </div>
+                <div class="button">
+                    <button onclick="ok(2)" class="ok"> Next</button>
+                    <button onclick="skip(2)" class="skip"> Skip </button>
+                </div>
+            </div>
+        
+            <div class="cover3">
+                <div class="top">
+                    <h4 class="prompt"> Step 1 : Personal Details | Question 3/5 <br> <br> Enter Your Age :</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Enter Age" class="input3">
+                </div>
+                <div class="button">
+                    <button onclick="ok(3)" class="ok"> Next</button>
+                    <button onclick="skip(3)" class="skip"> Skip </button>
+                </div>
+            </div>
+            <div class="cover4">
+                <div class="top">
+                    <h4 class="prompt"> Step 1 : Personal Details | Question 4/5 <br> <br> Enter Your Gender :</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Enter Gender" class="input4">
+                </div>
+                <div class="button">
+                    <button onclick="ok(4)" class="ok"> Next</button>
+                    <button onclick="skip(4)" class="skip"> Skip </button>
+                </div>
+            </div>
+            <div class="cover5">
+                <div class="top">
+                    <h4 class="prompt"> Step 1 : Personal Details | Question 5/5 <br> <br> Do you Agree with our Terms :</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Yes or No" class="input5">
+                </div>
+                <div class="button">
+                    <button onclick="ok(5)" class="ok"> Next</button>
+                    <button onclick="skip(5)" class="skip"> Skip </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- User profile details -->
+        <fieldset>
+            <legend> Personal Details</legend>
+            <div class="userPersonal">
+                <p> <strong> Name : </strong>
+                    <span id="UserName"></span>
+                </p>
+                
+                <p> <strong> Surname : </strong>
+                    <span id="UserSurname"></span>
+                </p>
+                
+                <p> <strong> Age: </strong>
+                    <span id="UserAge"></span>
+                </p>
+                
+                <p> <strong> Gender: </strong>
+                    <span id="UserGender"></span>
+                </p>
+                
+                <p> <strong> Agree With Terms : </strong>
+                    <span id="UserAgree"></span>
+                </p>
+            </div>
+        </fieldset>
+        <!-- Button for Adding data to step 2-->
+        <button onclick="Step2()" class="Step2Button"> Step 2 : Add Energy Intrests</button>
+
+        <!-- Step 2 Prompt Boxes-->
+        <div class="Step2">
+            <div class="cover11">
+                <div class="top">
+                    <h4 class="prompt">Step 2 : Energy Intrests | Question 1/5 <br> <br> What types of renewable energy are you interested in? </h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Type Here.." class="input11">
+                </div>
+                <div class="button">
+                    <button onclick="ok2(1)" class="ok"> Next</button>
+                    <button onclick="skip2(1)" class="skip"> Skip </button>
+                </div>
+            </div>
+        
+            <div class="cover12">
+                <div class="top">
+                    <h4 class="prompt">Step 2 : Energy Intrests | Question 2/5 <br> <br> Are you interested in installing a renewable energy system on your property?  :</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Type Here.." class="input12">
+                </div>
+                <div class="button">
+                    <button onclick="ok2(2)" class="ok"> Next</button>
+                    <button onclick="skip2(2)" class="skip"> Skip </button>
+                </div>
+            </div>
+        
+            <div class="cover13">
+                <div class="top">
+                    <h4 class="prompt">Step 2 : Energy Intrests | Question 3/5 <br> <br>  Enter your average monthly electricity bill : </h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Type Here.." class="input13">
+                </div>
+                <div class="button">
+                    <button onclick="ok2(3)" class="ok"> Next</button>
+                    <button onclick="skip2(3)" class="skip"> Skip </button>
+                </div>
+            </div>
+            <div class="cover14">
+                <div class="top">
+                    <h4 class="prompt">Step 2 : Energy Intrests | Question 4/5 <br> <br>  Enter your Property Type : </h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Type Here.." class="input14">
+                </div>
+                <div class="button">
+                    <button onclick="ok2(4)" class="ok"> Next</button>
+                    <button onclick="skip2(4)" class="skip"> Skip </button>
+                </div>
+            </div>
+            <div class="cover15">
+                <div class="top">
+                    <h4 class="prompt">Step 2 : Energy Intrests | Question 5/5 <br> <br>  Enter your Location :</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Type Here.." class="input15">
+                </div>
+                <div class="button">
+                    <button onclick="ok2(5)" class="ok"> Next</button>
+                    <button onclick="skip2(5)" class="skip"> Skip </button>
+                </div>
+            </div>
+        </div>
+        <!-- Energy Intrests-->
+        <fieldset>
+            <legend> Energy Intrests </legend>
+            <div class="userIntrests">
+                <p> <strong> Intrested Energy Types : </strong>
+                    <span id="intrests"></span>
+                </p>
+                        
+                <p> <strong> Interested on renewable energy : </strong>
+                    <span id="Property"></span>
+                </p>
+                        
+                <p> <strong> Monthly electricity bill: : </strong>
+                    <span id="Bill"></span>
+                </p>
+                        
+                <p> <strong> Property Type : </strong>
+                    <span id="Place"></span>
+                </p>
+                        
+                <p> <strong> Location : </strong>
+                    <span id="Location"></span>
+                </p>
+            </div>
+        </fieldset>
+
+        <!-- Button for Adding data to step 3-->
+        <button onclick="Step3()" class="Step3Button"> Step 3 : Add Contact Information</button>
+
+        <!-- Step 3 Prompt Boxes-->
+        <div class="Step3">
+            <div class="cover21">
+                <div class="top">
+                    <h4 class="prompt"> Step 3 : Contact Information | Question 1/4 <br> <br> Enter Your Phone Number :  </h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Type Here.." class="input21">
+                </div>
+                <div class="button">
+                    <button onclick="ok3(1)" class="ok"> Next</button>
+                    <button onclick="skip3(1)" class="skip"> Skip </button>
+                </div>
+            </div>
+        
+            <div class="cover22">
+                <div class="top">
+                    <h4 class="prompt">Step 3 : Contact Information | Question 2/4 <br> <br>Enter Your Email Adress : </h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Type Here.." class="input22">
+                </div>
+                <div class="button">
+                    <button onclick="ok3(2)" class="ok"> Next</button>
+                    <button onclick="skip3(2)" class="skip"> Skip </button>
+                </div>
+            </div>
+        
+            <div class="cover23">
+                <div class="top">
+                    <h4 class="prompt">Step 3 : Contact Information | Question 3/4 <br> <br> Enter Your LinkedIn Id : </h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Type Here.." class="input23">
+                </div>
+                <div class="button">
+                    <button onclick="ok3(3)" class="ok"> Next</button>
+                    <button onclick="skip3(3)" class="skip"> Skip </button>
+                </div>
+            </div>
+
+            <div class="cover24">
+                <div class="top">
+                    <h4 class="prompt">Step 3 : Contact Information | Question 4/4 <br> <br> What's the country :  </h4>
+                </div>
+                <div class="middle">
+                    <input type="text" placeholder="Type Here.." class="input24">
+                </div>
+                <div class="button">
+                    <button onclick="ok3(4)" class="ok"> Next</button>
+                    <button onclick="skip3(4)" class="skip"> Skip </button>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Information-->
+        <fieldset>
+            <legend> Contact Information </legend>
+            <div class="userContact">
+                <p> <strong> Mobile Number : </strong>
+                    <span id="Mobile"></span>
+                </p>
+                        
+                <p> <strong> Email : </strong>
+                    <span id="Email"></span>
+                </p>
+                        
+                <p> <strong> LinkedIn : </strong>
+                    <span id="Linked"></span>
+                </p>
+                        
+                <p> <strong> Country : </strong>
+                    <span id="Country"></span>
+                </p>
+            </div>
+        </fieldset>
+
+        <div class="UserEdit">
+            <!-- Button for User Choise for Editing inputed data  -->
+            <button onclick="UserEditChoise()">Edit above Details </button>
+        </div>
+        
+        <div class="EditStep1">
+            <!-- Button for Edit the Step 1  -->
+            <button onclick="Editstep1()">Edit Step 1 : Personal Details </button>
+        </div>
+        <div class="EditStep2">
+            <!-- Button for Edit the Step 2  -->
+            <button onclick="Editstep2()">Edit Step 2 : Energy Intrests </button>
+        </div>
+        <div class="EditStep3">
+            <!-- Button for Edit the Step 3  -->
+            <button onclick="Editstep3()">Edit Step 3 : Contact Information </button>
+        </div>
+
+        <div class="Submit">
+            <!-- Button for Submit inputed data  -->
+            <button onclick="SubmitDetails()">Submit </button>
+        </div>
+        <div class="popupwindow">
+            <h2>Profile Created Suessfully! </h2>
+            <p> Thank You</p>
+            <button onclick="PopUp()"> View Profile </button>
+        </div>
+        <!-- Importing The user profile javascript-->
+        <script src="javaScriptFiles/User_Profile.js"></script>
+        <!--Footer-->
+        <footer>
+            <div class="footer-content">
+                <a href="PageEditor_Stu3.html"> Page Editor : Yuthmika Gamage</a>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            <p class="copyright">&copy; 2024 Synerger. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

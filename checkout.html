@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout.css"> <!--connecting the CSS page-->
+   
+</head>
+<body>
+
+<div class="Container">
+
+    <form action="last.html" onsubmit="return validateForm()"> <!--After click submit button redirect to last button and run the validation in JS-->
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Billing address</h3>
+
+                <div class="inputBox">
+                    <span>Full name :</span>        <!--Getting the full name of the customer-->
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>        <!--Getting the email of the customer-->
+                    <input type="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="inputBox">
+                    <span>Telephone Number :</span>     <!--Getting the telephone of the customer-->
+                    <input type="text" id="num" placeholder="07X XXX XXXX" maxlength="10" required>
+                </div>
+                <div class="inputBox">
+                    <span>Address :</span>
+                    <div class="flex">              <!--Getting the Address of the customer-->
+                        <input type="text" placeholder="No">
+                        <input type="text" placeholder="Street Name" required>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>     <!--Getting the city of the customer-->
+                    <input type="text" placeholder="Colombo" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Country :</span>      <!--Getting the country of the customer-->
+                        <input type="text" placeholder="Sri Lanka" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Zip code :</span>     <!--Getting the zip code of the customer-->
+                        <input type="text" placeholder="12345" maxlength="5" required>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Payment Details</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>       <!--image of card logos-->
+                    <img src="card_img.png" alt="Card logos">
+                </div>
+                <div class="inputBox">
+                    <span>Cardholder's Full Name :</span>       <!--Getting the cardholder's full name of the customer-->
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>   <!--Getting the card number of the customer-->
+                    <input type="text" id="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="16" required>
+                </div>
+                <div class="inputBox">
+                    <span>Expiry Date :</span>  <!--Getting the expiry date of the customer-->
+                    <input type="month" id="start" min="2023-06" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>CVV :</span>      <!--Getting the security code of the customer-->
+                    <input type="text" id="CVV" placeholder="123" maxlength="3" required>
+                </div>
+                <div class="checkbox">
+                    Agree to the terms and conditions.      <!--Getting agreed to the terms and conditions-->
+                    <input type="checkbox" name="T&C" required>
+                </div>
+            </div>
+    
+
+        <input type="submit" value="Confirm Order" class="submit-btn"><!--submit button-->
+
+        <script src="javaScriptFiles/checkout.js"></script> <!--Linking the JS file of checkout page-->
+        
+    </form>
+
+</div>    
+    
+</body>
+</html>

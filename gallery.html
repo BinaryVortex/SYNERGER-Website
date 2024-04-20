@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Page</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+<header>
+    <a href="" class="logo">Synerger</a>
+    <nav class="navbar">
+        <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="AboutUs.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="sitemap.html">SiteMap</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="User_Profile.html">User Profile</a></li>            
+        </ul>
+    </nav>
+</header>
+
+  <div class="heading">
+    <div class="headingText">
+        <h1>GALLERY</h1>
+    </div>
+  </div>  
+
+  <div class="change">
+    <div class="color">
+        <form id="backgroundColorChange">
+            <label for="color">Background colour</label>
+            <select name="Colour" id="color" onchange="backgroundchange(this);">
+                <option value="black" selected>Default</option>
+                <option value="rgb(48, 51, 71)">Dark Purple</option>
+                <option value="#5C4033">Dark Brown</option>
+                <option value="darkBlue">Dark Blue</option>
+            </select>
+        </form>
+        <button id="button" onclick="randomChange()">Random</button>
+    </div>
+
+    <div class="fontFamily">
+      <form id="fontFamilyForm">
+        <label for="fontFamily">Select Font Family:</label>
+        <select name="fontFamily" id="fontFamily" onchange="fontChangeFamily(this.value)">
+          <option value="Arial">Arial</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Verdana">Verdana</option>
+        </select>
+      </form>
+    </div>
+  </div>
+
+  <div class="head">
+    <h2>Renewable and Sustainable Energy</h2>
+  </div>
+  
+  <div class="gallery">
+    <div class="thumbnail" data-description="description 1">
+      <img id="img1" src="images_Stu4/image1.jpg" alt="Image 1" width="384" height="216" onmouseover="display(this);">
+      <div id="description1">
+        <h3>Solar Energy</h3>
+        <br>
+        <p>Solar energy is a clean and abundant renewable energy source that utilizes the power of the sun to generate electricity. By installing solar panels on your rooftop, you can convert sunlight into clean electricity to power your home or business. Solar energy offers numerous benefits, including:
+          <br>
+          Reduced reliance on fossil fuels: Solar energy helps decrease dependence on conventional fossil fuels, promoting cleaner air and combating climate change.
+          <br>
+          <br><b>> Electricity bills:</b>  By generating your own electricity, you can significantly reduce your dependence on the grid and potentially save money on electricity bills.
+          <br>
+          <br><b>> Home value:</b> Homes equipped with solar panels are often viewed as more sustainable and attractive to potential buyers, potentially increasing their resale value.
+          <br>
+          <br><b>> Incentives:</b> Many governments offer financial incentives, such as tax credits or rebates, to encourage homeowners and businesses to install solar panels.
+          <br>
+          <br><b>> Maintenance:</b> Solar panels require minimal maintenance, making them a hassle-free way to generate clean energy.
+          <br>
+          <br> <i>Solar Energy is a viable and sustainable solution for a greener future.  Explore the possibilities of solar energy today and take a step towards a more sustainable tomorrow!</i></p>
+      </div>
+    </div>
+    
+    <div class="thumbnail" data-description="description 2">
+      <img id="img2" src="images_Stu4/image2.jpeg" alt="Image 2" width="384" height="216" onmouseover="display(this);">  
+      <div id="description2">
+        <h3>Bio Energy</h3>
+        <br>
+        <p>Bioenergy harnesses the power of organic matter, like plants and animal waste, to create renewable fuels and electricity. It offers a familiar and versatile approach to clean energy production.
+          <br>
+          <br><b>Bioenergy can be converted into various forms:</b>
+        
+          <br>Biofuels: Processed from plant materials like corn or sugarcane, biofuels can power vehicles as a cleaner alternative to traditional gasoline and diesel.
+          <br>Biogas: Produced through the anaerobic decomposition of organic waste, biogas can be used for electricity generation or heating.
+          <br>Biomass Combustion: Burning wood or other organic materials directly generates heat and electricity, often used in industrial settings.
+          <br><br><b>Benefits of Bioenergy:</b>
+        
+          <br>Renewable Source: Bioenergy utilizes organic materials that can be continuously replenished.
+          <br>Reduced Emissions: Compared to fossil fuels, bioenergy produces lower greenhouse gas emissions.
+          <br>Waste Management: Biogas production helps manage waste and convert it into a valuable resource.
+          <br><br><b>Considerations:</b>
+          
+          <br>Sustainability Concerns: Large-scale biofuel production can compete with food resources and lead to deforestation. Sustainable practices are crucial.
+          <br>Efficiency: Converting biomass into usable energy can be less efficient than other renewable sources. Technological advancements are key.
+          <br><br><b>Bioenergy's Potential:</b>
+          <br>
+          Bioenergy offers a promising path towards a cleaner future. Research focuses on developing sustainable practices, improving efficiency, and exploring new sources like algae for biofuel production.</p>
+      </div>
+    </div>
+
+    <div class="thumbnail" data-description="description 3">
+      <img id="img3" src="images_Stu4/image3.jpg" alt="Image 3" width="384" height="216" onmouseover="display(this);">
+      <div id="description3">
+        <h3>Hydropower</h3>
+        <br>
+        <p>Hydropower harnesses the power of moving water to generate electricity. It's one of the oldest and most established renewable energy sources, playing a crucial role in powering our world.
+          <br>
+          <br> <b>How it Works: </b>
+          <br>
+          Hydropower plants utilize the potential energy stored in elevated water. Dams create reservoirs, collecting water at a higher elevation. This water is then channeled through turbines, converting the potential energy into kinetic energy as it falls. The moving water spins the turbine blades, which in turn, rotates a generator to produce electricity.
+          <br>
+          <br> <b>Benefits of Hydropower</b>:
+        
+          <br> Clean and Renewable: Hydropower generates electricity without producing harmful emissions, contributing to a cleaner environment.
+          <br>Reliable and Dispatchable: Unlike wind and solar, hydropower plants can store water in reservoirs, allowing for electricity generation on demand.
+          <br>Multiple Uses: Hydropower dams often serve additional purposes like flood control, irrigation, and recreation.
+          <br><br><b>Considerations:</b>
+          
+          <br> Environmental Impact: Building dams can disrupt ecosystems and displace wildlife. Careful planning and mitigation strategies are crucial.
+          <br>Geographical Limitations: Suitable locations for large-scale hydropower projects are limited, requiring careful evaluation.
+          <br><br><b>The Future of Hydropower:</b>
+          
+          <br><i> Hydropower remains a vital source of renewable energy. Research focuses on optimizing existing plants, minimizing environmental impact, and exploring smaller-scale run-of-river projects.</i></p>
+      </div>
+    </div>
+
+    <div class="show">
+      <div id="description"></div>
+    </div>
+
+    <div class="thumbnail" data-description="description 4">
+      <img id="img4" src="images_Stu4/image4.jpg" alt="Image 4" width="384" height="216" onmouseover="display(this);">
+      <div id="description4">
+        <h3>Wind energy</h3>
+        <br>
+        <p>Wind energy harnesses the power of moving air to generate clean electricity. Those towering wind turbines you see on hills and plains are modern windmills, converting the wind's kinetic energy into a sustainable source of power.
+          <br>
+          <br><b>How it Works:</b>
+          
+          The wind spins the blades of a wind turbine, which in turn rotates a shaft connected to a generator. The generator converts the mechanical energy of rotation into electricity. The faster the wind blows, the more electricity a turbine can produce. Wind farms, consisting of multiple turbines, can generate significant amounts of electricity.
+          <br>
+          <br><b>Benefits of Wind Energy:</b>
+          <br>
+          Clean and Renewable: Wind energy produces electricity without harmful emissions, contributing to a cleaner environment.
+          <br>Abundant Resource: Wind is a constantly replenished resource, readily available in many locations.
+          <br>Cost-Effective: Wind energy technology has become increasingly cost-competitive with traditional energy sources.
+          <br>
+          <br><b>Considerations:</b>
+          <br>
+          Visual Impact: Wind turbines can be visually disruptive in some landscapes. Careful siting and community involvement are essential.
+          <br>Variable Resource: Wind speed is not always consistent, requiring backup power sources or energy storage solutions.
+          <br>Wildlife Impact: Careful planning and mitigation strategies are needed to minimize any impact on bird migration patterns.
+          <br>
+          <br><b>The Future of Wind Energy:</b>
+          <br>
+          Wind energy is a rapidly growing renewable energy source. Research focuses on developing larger, more efficient turbines, offshore wind farms, and improved energy storage solutions.</p>
+      </div>
+    </div>  
+
+    <div class="thumbnail" data-description="description 5">
+      <img id="img5" src="images_Stu4/image5.jpeg" alt="Image 5" width="384" height="216" onmouseover="display(this);">
+      <div id="description5"> 
+        <h3>Ocean energy</h3>
+        <br>
+        <p>The vast oceans hold immense potential for clean and renewable energy. Ocean energy technologies are harnessing the power of waves, tides, and currents to generate electricity, offering a glimpse into a future powered by the sea.
+          <br>
+          <br><b>Capturing the Ocean's Power: There are three main ways to capture ocean energy:</b>
+          <br>
+          > Wave Energy: Wave converters use the motion of waves on the surface to generate electricity. Different technologies convert the rise and fall of waves or the pressure changes they create into usable energy.
+          <br>> Tidal Energy: Tidal energy utilizes the predictable rise and fall of tides. Turbines placed in underwater currents capture the kinetic energy of moving water to generate electricity.
+          <br>> Ocean Thermal Energy Conversion (OTEC): This technology uses the temperature difference between warm surface water and deep, cold ocean water to generate electricity through a closed-loop system.
+          <br>
+          <br><b>Benefits of Ocean Energy:</b>
+          <br>
+          Clean and Abundant: Like other renewable sources, ocean energy produces electricity without harmful emissions. The ocean's power is vast and constantly replenished.
+          Predictable and Reliable: Tides and waves are predictable phenomena, allowing for more reliable energy generation compared to wind or solar.
+          Minimal Land Use: Unlike solar farms or wind turbines, ocean energy utilizes offshore areas, minimizing impact on land resources.
+          <br>
+          <br><b>Considerations:</b>
+          <br>
+          Technology Development: Ocean energy technologies are still under development, requiring further research and innovation to become commercially viable.
+          <br>Environmental Impact: Careful planning and mitigation strategies are crucial to minimize any impact on marine life and ecosystems.
+          <br>Cost-Effectiveness: Currently, ocean energy generation costs can be higher than other renewable sources.
+          <br><br><b>The Future of Ocean Energy:</b>
+          <br>
+          Ocean energy holds immense potential for a sustainable future. Research focuses on improving efficiency, reducing costs, and developing environmentally responsible technologies.</p>
+      </div>
+    </div>
+    
+    <div class="thumbnail" data-description="description 6">
+      <img id="img6" src="images_Stu4/image6.jpg" alt="Image 6" width="384" height="216" onmouseover="display(this);">
+      <div id="description6">
+        <h3>Geothermal Energy</h3>
+        <br>
+        <p>Geothermal energy harnesses the Earth's internal heat to generate electricity.  This incredible resource lies just beneath our feet, offering a clean and reliable source of renewable power.
+          <br>
+          <br><b>Heat from the Inside Out:</b>
+          
+          <br>Our planet's core is incredibly hot, and this heat naturally radiates outwards. Geothermal power plants tap into this heat by drilling deep underground and accessing hot water or steam reservoirs. The hot fluids are then used to:
+          <br>
+          <br>Drive turbines: Similar to conventional power plants, the hot fluids spin turbines connected to generators, producing electricity.
+          <br>Direct heat exchange: In some cases, the geothermal fluids can be used directly for heating buildings or greenhouses, bypassing the electricity generation process.
+          <br><br><b>Benefits of Geothermal Energy:</b>
+          <br>
+          Clean and Renewable: Geothermal energy produces electricity with minimal emissions, contributing to a cleaner environment.
+          <br>Reliable and Baseload: Unlike wind and solar, geothermal plants are not dependent on weather conditions and can provide a constant source of power, making them ideal for baseload electricity generation.
+          <br>Sustainable Source: The Earth's heat is constantly being replenished, making geothermal a sustainable energy source.
+          <br><br><b>Considerations:</b>
+          <br>
+          Geographical Limitations: Suitable locations for geothermal plants are limited to areas with high underground heat flow, often near tectonic plate boundaries.
+          <br>Initial Investment: Drilling geothermal wells can be expensive initially, although the long-term operational costs are relatively low.
+          <br>Potential Emissions: In some geothermal plants, depending on the technology used, there may be a small risk of releasing greenhouse gases trapped underground. Regulations and proper management are crucial.
+          <br><br><b>The Future of Geothermal Energy:</b>
+          Geothermal energy offers a reliable and clean energy source for the future. Research focuses on developing enhanced geothermal systems (EGS) that can access geothermal resources in a wider range of locations.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+        <a href="pageEditor_Stu4.html"> Page Editor : Tharusha Jayawardena</a>
+        <ul class="footer-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      <p class="copyright">&copy; 2024 Synerger. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="javaScriptFiles/gallery.js"></script>
+  <script src="navbar.js"></script>
+
+  
+</body>
+  
+</html>

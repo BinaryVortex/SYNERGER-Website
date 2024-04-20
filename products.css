@@ -1,0 +1,351 @@
+/*Styling For All*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  font-size: 18px;
+}
+
+/*Styling For Body*/
+body {
+  background-image: url('images_Stu1/ShopBackground.webp');
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Styling for the header section */
+.header {
+  height: 80px;
+  width: 70%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 120px 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #000;
+}
+
+/* Styling for the products.products-p section */
+.products-p {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px 40px 20px 30px;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.products-p .add-to-cart {
+  margin-left: 0px;
+}
+
+/* Styling for the products.products-p images */
+.img-box {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Styling for the products.products-p image */
+.images {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Styling for the products.products-p title */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Styling for the products.products-p description */
+p {
+  color: #666;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Styling for the add to cart button */
+.btn {
+  background-color: #1b7f05;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the Empty cart button */
+.empty-btn {
+  background-color: #c0392b; /* Red color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the add to cart button on hover */
+.btn:hover {
+  background-color: #08945c;
+}
+
+/* Styling for h1 headings */
+h1 {
+  font-size: xx-large;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Styling for the cart section */
+.cart {
+  margin-left: 50%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 35%;
+  border-radius: 10px;
+  width: 100px;
+}
+
+/* .count {
+  margin-top: -100px;
+} */
+
+/* Styling for icons in the cart */
+.fa-solid {
+  color: #868686;
+}
+
+/* Styling for the cart icon */
+.cart p {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background-color: #000;
+  color: white;
+}
+
+/* Styling for the main container */
+.container {
+  margin-left: 220px;
+  display: flex;
+  width: 70%;
+  margin-bottom: 30px;
+  margin-top: -50px;
+}
+
+/* Styling for the 'root' element */
+#root {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+/* Styling for the sidebar section */
+.sidebar {
+  width: 50%;
+  border-radius: 10px;
+  background-color: #eee;
+  margin-left: 20px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+/* Styling for the header section inside the sidebar */
+.head {
+  background-color: green;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  align-items:left ;
+}
+
+/* Styling for the footer section inside the sidebar */
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid #333;
+}
+
+/* Styling for the boxes inside the sidebar */
+.box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 15px;
+  padding-bottom: 70px;
+}
+
+/* Styling for the image box inside the boxes */
+.img-box {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the images inside the image box */
+.images {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Styling for the bottom section inside the boxes */
+.bottom {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+
+/* Styling for h2 headings */
+h2 {
+  font-size: 20px;
+  color: red;
+}
+
+/* Styling for buttons */
+button {
+  width: 100%;
+  position: static;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s ease;
+  margin-top: 20px;
+}
+
+/* Styling for buttons on hover */
+button:hover {
+  background-color: #333;
+}
+
+/* Styling for the cart item section */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 8px;
+  margin: 10px 10px;
+}
+
+/* Styling for the row image box */
+.row-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #6527be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the row image */
+.rowimg {
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+
+/* Styling for the trash icon on hover */
+.fa-trash:hover {
+  cursor: pointer;
+  color: #333;
+}
+
+/* Styling for buttons with class 'btn' */
+.btn {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin: 0 10px 0 10px;
+}
+
+/* Styling for buttons with class 'btn' on hover */
+.btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Styling for the 'data' section */
+.data ul {
+  margin-top: 50px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+/* Styling for list items inside the 'data' section */
+.data li {
+  list-style: disc;
+}
+
+/* Styling for the input with type 'number' */
+input[type='number'] {
+  width: 60px;
+  margin-left: 10px;
+}
+
+/* Styling for the quantity section */
+.quantity {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  margin-top: 20px;
+}
+
+.products-p-p {
+  margin-bottom: 10px;
+}

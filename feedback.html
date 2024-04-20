@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>GreeTech | Feedback</title>
+        <link rel="icon" type="image/x-icon" href="Common/logo.png">
+
+        <link rel="stylesheet" href="feedback/feedback.css">
+        <link rel="stylesheet" href="navbar.css">
+        
+        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   <!--Stars-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>    <!--Footer icons-->
+        <script src="feedback/feedback.js" defer></script>
+        <script src="navbar.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <a href="home.html" class="logo">Synerger</a>
+    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="sitemap.html">SiteMap</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="User_Profile.html">User Profile</a></li>            
+                </ul>
+            </nav>
+        </header>
+
+        <div class="topic">
+            <h1>Feedback</h1>
+
+        </div>
+
+        <div class="content">
+            
+            <form action="#"> 
+
+                <div class="input_box">
+
+                    <div class="text input">
+                        <label for="Fname">
+                            <i class="fa fa-solid fa-user"></i>
+                        </label>
+                        <input class="item required" type="text" placeholder="First Name" id="Fname">
+                        <div class="error_text">Required</div>
+                    </div>
+
+                    <div class="text input">
+                        <label for="Lname">
+                            <i class="fa fa-solid fa-user"></i>
+                        </label>
+                        <input class="item required" type="text" placeholder="Last Name" id="Lname" >
+                        <div class="error_text">Required</div>
+                    </div>
+
+                </div>
+
+                <div class="input_box">
+
+                    <div class="text input">
+                        <label for="email">
+                            <i class="fa fa-solid fa-envelope"></i>
+                        </label>
+                        <input class="item required" type="text" placeholder="Email Address" id="email">
+                        <div class="error_text email">Required</div>
+                    </div>
+
+                    <div class="text input">
+                        <label for="phone">
+                            <i class="fa fa-solid fa-phone"></i>
+                        </label>
+                        <input class="item" type="tel" placeholder="Phone Number" id="phone" >
+                    </div>
+
+                </div>
+
+                <div class="buttons1">
+                    <label for="select">Was this your time visiting?</label>
+
+                    <div class="radio1">
+                        
+                        <label for="option1_1">Yes</label>
+                        <input type="radio" id="option1_1" name="option1" value="Yes">
+
+                        <label for="option1_2">No</label>
+                        <input type="radio" id="option1_2" name="option1" value="No">
+
+                    </div>
+                </div>
+
+                <div class="buttons2">
+                    <label for="select">Would you recommend our services?</label>
+
+                    <div class="radio2">
+                        
+                        <label for="option2_1">Yes</label>
+                        <input type="radio" id="option2_1" name="option2" value="Yes">
+                    
+                        <label for="option2_2">No</label>
+                        <input type="radio" id="option2_2" name="option2" value="No">
+                        
+                    </div>
+                </div>
+
+                
+                <div class="buttons2">
+                    <label for="select">Was this website informative and easy to navigate through?</label>
+
+                    <div class="radio2">
+                        
+                        <label for="option2_1">Yes</label>
+                        <input type="radio" id="option2_1" name="option2" value="Yes">
+                    
+                        <label for="option2_2">No</label>
+                        <input type="radio" id="option2_2" name="option2" value="No">
+                        
+                    </div>
+                </div>
+
+
+                
+
+                
+
+                <h2>Give us a rating</h2>
+
+                <div class="stars">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div><br>
+
+                <div class="drop">
+                    <label for="select">Would you like to receive updates about the website and any offers?</label>
+
+                    <select name="select" id="select">
+                        <option value="Yes - via Email">Yes - via Email</option>
+                        <option value="Yes - via SMS">Yes - via SMS</option>
+                        <option value="No thank you">No thank you</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+
+        <footer class="footer">
+            <div class="containerr">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="AboutUs.html">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="products.html">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="products.html">Shop</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+             <div class="madeby">
+               <h4>Made by: <a href="pageEditor_Stu2.html" target="_blank" title="Page editor">Banusha Kalhara </a></h4>
+               <p>&copy;2024 GreenTech | All Rights Reserved</p>
+             </div>
+             
+                </div>
+            </div>
+       </footer>
+        
+    </body>
+</html>

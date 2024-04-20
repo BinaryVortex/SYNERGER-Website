@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* Seting the background image*/
+    background: url("images_Stu3/PageEditor_Background.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10%;
+    color: rgb(9, 89, 62);
+    font-size: 50px;
+    font-weight:bold;
+    letter-spacing: 8px;
+    margin-bottom: 2rem;
+}
+h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+.content {
+    display: flex;
+    align-items: center;
+}
+.image {
+    flex: 0 0 auto;
+    margin-right: 2rem;
+}
+.image img {
+    border-radius: 10px;
+    width: 300px; 
+    height: 400px; 
+}
+.text {
+    flex: 1;
+    text-align: left;
+}
+.text p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    padding-left: 30px;
+}
+p{
+    padding-bottom: 3%;
+    font-size: 20px;
+}
+.container a{
+    color: black;
+    font-size: 15px;
+}
+.container a:hover{
+    color: rgb(50, 139, 63);
+    text-decoration: none;
+}
+h3{
+    padding-top: 30px;
+    font-size: 25px;
+    padding-bottom: 1%;
+}

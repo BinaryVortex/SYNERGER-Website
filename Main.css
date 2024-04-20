@@ -1,0 +1,12 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  /* Giving Font Style And Size To The All The Pages */
+  body{
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+  }

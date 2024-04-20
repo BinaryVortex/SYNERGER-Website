@@ -1,0 +1,209 @@
+/* Importing the 'Poppins' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap'); 
+/* Basic styling for the body */
+body{
+  background-color:  #000000;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;   
+  scroll-behavior: smooth;
+}
+
+/*Styling the buy products Form*/
+h1{
+  text-align: center;
+}
+
+/* Styling the form Container */
+.form-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container {
+  box-shadow: rgb(45, 45, 45) 0px 7px 29px 0px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  height: auto;
+  width: 700px; 
+  margin-left: 320px;
+}
+
+/* Styling the form title */
+legend {
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+fieldset{
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* Styling for form labels */
+label{
+  margin-left: 10px;
+  margin-top: 10px;
+  float:left;
+  width:25%; 
+}
+
+input[type=month]:focus {
+background-color: rgb(173, 230, 202);
+}
+
+/* Styling for form input fields */
+input[type=text],input[type=date],input[type=email],input[type=password], textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+/* Styling for focused text input fields */
+input[type=text]:focus {
+  background-color: rgb(173, 230, 202);
+}
+
+
+/* Styling for focused textarea */
+textarea:focus{
+  background-color: rgb(173, 230, 202);
+}
+
+/* Styling for focused email input field */
+input[type=email]:focus {
+  background-color: rgb(173, 230, 202);;
+}
+
+/* Styling for focused date input field */
+input[type=date]:focus {
+  background-color: rgb(173, 230, 202);
+}
+/*Styling the 'Reset' and 'Confirm order' buttons */
+.button{
+  display: flex;
+  justify-content: right;
+}
+
+/* Importing the 'Poppins' font for the entire page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/* Common styling for the entire page */
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+/* Styling for the main Container */
+.Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #27be68 60%, #14ce83 40.1%);
+}
+
+/* Styling for the form inside the Container */
+.Container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+/* Styling for the rows inside the form */
+.Container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+/* Styling for the columns inside the rows */
+.Container form .row .col{
+  flex:1 1 250px;
+}
+
+/* Styling for the title of each input box */
+.Container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+/* Styling for each input box */
+.Container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+/* Styling for the label of each input box */
+.Container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Styling for the input fields */
+.Container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+/* Styling for focused input fields */
+.Container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+/* Styling for the flex Container within columns */
+.Container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+/* Styling for the input boxes inside the flex Container */
+.Container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+
+/* Styling for the image inside the input box */
+.Container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+/* Styling for the submit button */
+.Container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: rgb(25, 172, 25);
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Styling for the submit button on hover */
+.Container form .submit-btn:hover{
+  background: #575c58;
+}
+
+/* Styling for the checkbox section */
+.checkbox{
+    display: flex;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 10px;
+    text-align: left;
+    
+}

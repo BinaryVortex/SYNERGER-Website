@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    /* Seting the background color*/
+    background-color: rgb(255, 250, 244);
+}
+
+.heading h1{
+    /* Seting the background image only on H1 Text*/
+    background: url("images_Stu3/SlideShow1.jpeg");
+    background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    animation: slide 15s infinite;
+    margin-bottom: 5%;
+}
+/* Creating changing the background on H1 text infinitly (two images) */
+@keyframes slide{
+    50%{
+        background: url("images_Stu3/SlideShow2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url("images_Stu3/SlideShow1.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.content a{
+    color: green;
+    margin-left: 5%;
+    font-size: large;
+}
+.content a:hover{
+    color: rgb(3, 3, 3);
+}
+.content h1{
+    padding-top: 20px;
+    color: rgb(10, 66, 4);
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 40px;
+}
+.content h2{
+    padding-top: 30px;
+    color: rgb(39, 39, 39);
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+}
+.content p{
+    padding-top: 20px;
+    color: rgb(39, 39, 39);
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+}
+/* Adding a background to advantage texts */
+.advantages p{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(14, 167, 19);
+    font-size: 20px;
+}
+.advantages p:hover{
+    background-color: rgb(108, 217, 126);
+}
+.advantages h3{
+    font-weight: 100;
+    padding-top: 20px;
+    color: rgb(39, 39, 39);
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+.advantages a{
+    margin-left: 5%;
+    color: green;
+    
+}
+.advantages a:hover{
+    color: rgb(3, 3, 3);
+}
+.advantages h2{
+    padding-top: 30px;
+    color: rgb(39, 39, 39);
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.images{
+    text-align: center;
+}
+.images img{
+    width: 300px;
+    height: 300px;
+    margin-left: 5%;
+    margin-right: 3%;
+    border-radius: 5%;
+    margin-bottom: 5%;
+}
+#backToTop {
+    margin-left: 45%;
+    margin-bottom: 5%;
+    background-color: #0a8427; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#backToTop:hover {
+    background-color: rgb(108, 217, 126);
+}

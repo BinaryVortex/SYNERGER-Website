@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for anchor links (hyperlinks) */
+.footer a{
+  color: white;
+}
+
+/* Styling for anchor links on hover */
+.footer a:hover{
+  color:rgb(141, 202, 127);
+}
+
+/* Styling for the footer section */
+footer {
+  width: 100%;
+  background-color: #1b5604;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for the content inside the footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-content a{
+  color: white;
+}
+.footer-content a:hover{
+  color:rgb(141, 202, 127);
+}
+
+/* Styling for the list of links inside the footer */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Styling for each list item (link) in the footer */
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Styling for anchor links inside the footer */
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Styling for anchor links inside the footer on hover */
+.footer-links li a:hover {
+  text-decoration: none;
+  color: rgb(135, 237, 112);
+}
+
+/* Styling for the copyright text in the footer */
+.copyright{
+  margin-top: 10px;
+}
+

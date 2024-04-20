@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SYNERGER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS styles */
+        body {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #Splash {
+            /* Splash screen styles */
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            opacity: 1;
+            transition: opacity 1s; /* Smooth transition for opacity */
+            top: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+        }
+
+        .logo {
+            /* Logo styles */
+            width: 0; /* Initial width set to 0 */
+            opacity: 0; /* Initially hidden */
+            transition: width 1s, opacity 1s; /* Smooth transition for scaling and opacity */
+        }
+
+        #Splash.fade .logo {
+            /* Applying scaling effect and fade-in animation when .fade class is added */
+            width: 300px; /* Adjust the final size as needed */
+            opacity: 1;
+        }
+
+        #synerger {
+            /* SYNERGER text styles */
+            color: white;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        #cleanEnergy {
+            /* Clean energy text styles */
+            color: white;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        #teammates {
+            /* Teammates list styles */
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Splash">
+        <!-- Splash screen content -->
+        <img class="logo" src="images_Stu1/SynergerLogo.png"> <!-- SYNERGER logo -->
+        <div id="synerger">SYNERGER</div> <!-- SYNERGER text -->
+        <div id="cleanEnergy">"Renewable Energy I'm A Big Fan!"</div> <!-- Clean energy text -->
+        <div id="teammates">
+            <!-- Teammates list -->
+            Teammates:
+            <br>1) Disandu Perera - Student 1
+            <br>2) Banusha Kalhara- Student 2
+            <br>3) Yuthmika Gamage- Student 3
+            <br>4) Tharusha Jaye  - Student 4
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code to trigger the animation when the page loads
+        document.addEventListener("DOMContentLoaded", function() {
+            var splash = document.getElementById('Splash');
+            splash.classList.toggle('fade');
+            // Redirect to home page after animation completes (5 seconds delay)
+            setTimeout(function() {
+                window.location.href = "home.html"; // Change "home.html" to your actual home page URL
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

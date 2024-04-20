@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+}
+
+.heading {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-top: 0;
+  text-align: center;
+  background-image: url(images_Stu4/sitemap.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+h1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 10%;
+  color: rgb(9, 89, 62);
+  font-size: 50px;
+  font-weight:bold;
+  letter-spacing: 8px;
+  margin-bottom: 2rem;
+}
+
+.sitemap{
+  display: flex;
+  justify-content: center;
+}
+
+rect{
+  stroke: gray; 
+  stroke-width: 2;
+  fill: green;
+}
+
+text{
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  fill: white;
+}
+
+.group:hover rect{
+  transition: 0.6s;
+  fill: rgb(177, 255, 159);
+  
+}
+
+.group:hover text{
+  fill: black;
+  
+}
+
